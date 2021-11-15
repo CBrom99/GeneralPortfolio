@@ -6,46 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='style.css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script defer src="./index.js"></script>
     <title>Homepage</title>
 </head>
 <body>
     <div class='section' id='homepage'>
         <header>
             
-            <nav>
-                <a href=#>Homepage</a>
-                <a href=#>About Me</a>
-                <a href=#>Contact Me</a>
+            <nav >
+                
+                <a href=#homepage>Homepage</a>
+                <a href=#aboutme>About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href=#contact id="last">Contact Me</a>
             </nav>
-                
-                
         </header>
-    
-        <h1> Cameron Bromley </h1>
-        <p> Welcome to my portfolio. My name is Cameron and I'm currently a student at futureproof. (extra text). (extra extra text). bruh </p>
+
+        <div class="sidebar">
+            <div><a href="https://linkedin.com/in/cameron-bromley-470a83217" target="_blank"><i class="uil uil-linkedin"></i></a></div>
+            <div><a href="https://github.com/cbrom99" target="_blank"><i class="uil uil-github"></i></a></div>
+            <div><a href="mailto:cameronbromley8@gmail.com"><i class="uil uil-envelope-alt"></i></a></div>
+        </div>
+
+        <div id='welcome'>
+            <div id='welcomeMessageContainer'><h1 id='welcomeMessage'> Cameron Bromley <hr> </h1></div>
+            <div><h3 id="traits">- Guitarist -</h3></div>
+        </div>    
+
         
+        
+    </div>
+    <div class='section' id='aboutme'>
+        <h1 class='sectionTitle'>About Me</h1>
+        <div id='aboutMeContent'>
+            <div id='pic-container'>
+                <img src="images/LinkdInPP.jpg" alt="" id='LinkdInPPIMG'>
+            </div>
+            <div id='aboutMeText'>
+                <p>Hi I'm Cameron. I recently graduated from the University of Sheffield with a masters degree in Theoretical Physics.
+                Since then I have enrolled with futureproof on their full-stack web development course. 
+                </p>
+
+            </div>
+            <a id="CV" href="images/Cameron_Bromley_CV.pdf" target="_blank">VIEW CV</a>
+        </div>
         
 
     </div>
-    <div class='section'>
-        <h1>About Me</h1>
-        <p>I am a 22 year old theoretical physics graduate from the university of sheffield </p>
-        <p>I am a 22 year old theoretical physics graduate from the university of sheffield </p>
-
-    </div>
-    <div class='section'>
-        <h1>Projects</h1>
-    </div>
-    <div class="section">
-        <h1>Skills</h1>
-    </div>
-    <div class="section">
-        <h1>Contact me</h1>
+    <div class='section' id='projects'>
+        <h1 class='sectionTitle'>Projects</h1>
+        <div id="projectCarousel">
+            <h1 class="comingSoon">Coming Soon</h1>
+        </div>
     </div>
     
-    <!-- <div class='footer'>
+    <div class="section" id='skills'>
+        <h1 class='sectionTitle'>My Tech Stack</h1>
+        
+        <div id='skillGrid'>
+            <div class='skill'><img src="images/html.svg" alt="HTML Logo"><h3 class='skillName'>HTML</h3></div>
+            <div class='skill'><img src="images/css.svg" alt="CSS Logo"><h3 class='skillName'>CSS</h3></div>
+            <div class='skill'><img src="images/js.svg" alt="JS Logo"><h3 class='skillName'>JavaScript</h3></div>
+            <div class='skill'><img src="images/docker.svg" alt="Docker Logo"><h3 class='skillName'>Docker</h3></div>
+            <div class='skill'><img src="images/postgresql.svg" alt="PostgreSQL Logo"><h3 class='skillName'>Postgres</h3></div>
+            <div class='skill'><img src="images/mongodb.svg" alt="MongoDB Logo"><h3 class='skillName'>MongoDB</h3></div>
+            <div class='skill'><img src="images/git.svg" alt="Git Logo"><h3 class='skillName'>Git</h3></div>
+            <div class='skill'><img src="images/node.svg" alt="node Logo"><h3 class='skillName'>Node</h3></div>
+            <div class='skill'><img src="images/react.svg" alt="react Logo"><h3 class='skillName'>React</h3></div>
+            <div class='skill'><img src="images/jest.svg" alt="jest Logo"><h3 class='skillName'>Jest</h3></div>
+        </div>
+        
+
+    </div>
+    <div class="section" id='contact'>
+        <h1 class='sectionTitle'>Contact me</h1>
+        
+        <div id='contactContent'>
+            <div id="contactInfo">
+                <div class="boxes">
+                    <div class="circles"><i class="uil uil-phone"></i></i></div><h3>+44 7954 577 463</h3>
+                </div>
+                <div class="boxes">
+                    <div class="circles"><i class="uil uil-map-marker"></i></div><h3>Manchester, England</h3>
+                </div>
+                <div class="boxes">
+                    <div class="circles"><i class="uil uil-envelope-alt"></i></div><h3>cameronbromley8@gmail.com</h3>
+                </div>
+            </div>
+            <!-- <div id="contactForm"> -->
+            <div id="collaborate">
+                <h1>Let's Collaborate!</h1>
+            </div>
+            <form action="https://formspree.io/f/xwkagbqv" method="post">
+                <div id='leftSide'>
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <input type="tel" name="name" placeholder="Enter your number">
+                </div>
+                <div id="rightSide">
+                    <textarea name="message" placeholder="Tell me about your opportunity"></textarea>
+                </div>
+                <div>
+                    <button type="submit" name="submit" id='submit'>Connect With Me!</button>
+                </div>
+
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
+    <footer>
         <p>&#169;Cameron Bromley</p>
-    </div>     -->
+    </footer>    
+    
     
 </body>
 </html>
+
+                
+                
+    
+        
