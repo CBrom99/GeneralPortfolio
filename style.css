@@ -237,14 +237,25 @@ nav a:hover {
 
 /* project page */
 
-#projectCarousel {
+#carouselContainer {
     margin-left: 10%;
     display: flex;
-    flex-direction: column;
+    
     /* border: 1px solid #000; */
     max-width: 80%;
     min-height: 80%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+#projectCarousel {
+    margin-left: 10%;
+    display: flex;
+    border: 1px solid #000;
+    margin-top: 10%;   
+    min-width: 80%;
+    max-height: 600px;
+    
     border-radius: 10px;
 }
 
